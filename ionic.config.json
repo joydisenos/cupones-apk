@@ -1,7 +1,0 @@
-{
-  "name": "cuponesApp",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
