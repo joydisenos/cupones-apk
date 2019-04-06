@@ -58,24 +58,8 @@ var HomePage = /** @class */ (function () {
     function HomePage(navCtrl, iab) {
         this.navCtrl = navCtrl;
         this.iab = iab;
-        this.options = {
-            location: 'no',
-            hidden: 'no',
-            clearcache: 'yes',
-            clearsessioncache: 'yes',
-            zoom: 'yes',
-            hardwareback: 'yes',
-            mediaPlaybackRequiresUserAction: 'no',
-            shouldPauseOnSuspend: 'no',
-            closebuttoncaption: 'Close',
-            disallowoverscroll: 'no',
-            toolbar: 'no',
-            enableViewportScale: 'no',
-            allowInlineMediaPlayback: 'no',
-            presentationstyle: 'pagesheet',
-            fullscreen: 'yes',
-        };
-        this.iab.create('https://m.cuponesmdp.com/home', '_self', this.options);
+        var browser = this.iab.create('https://m.cuponesmdp.com/home', '_self', { location: 'no' });
+        browser.show();
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
